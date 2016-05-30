@@ -29,6 +29,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'f&pppjiw^qpup1_*02+)yeoli3-p@t(-+gwo7s&g*akgv=bfis'
+ENCRYPTED_FIELDS_SECRET_KEY = SECRET_KEY
     # DO NOT FORGET TO CHANGE THE SECRET KEY!
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -47,6 +48,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'myapp',
+    'eftest',
 ]
 
 if environ('SSLSERVER'):
